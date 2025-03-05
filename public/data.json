@@ -1,0 +1,38 @@
+[
+  {
+    "id": "8271",
+    "author": "John Doe",
+    "author_image": "https://i.ibb.co.com/39r8Z4dz/boy1.png",
+    "posted_date": "2024-07-10",
+    "reading_time": "05",
+    "blog_image": "https://i.ibb.co.com/wrQvdpZq/1.jpg",
+    "hashtags": ["#technology", "#AI", "#innovation"]
+  },
+  {
+    "id": "5934",
+    "author": "Jane Smith",
+    "author_image": "https://i.ibb.co.com/4ZSHSwRV/boy2.jpg",
+    "posted_date": "2024-07-12",
+    "reading_time": "03",
+    "blog_image": "https://i.ibb.co.com/DPCR5tjd/2.png",
+    "hashtags": ["#business", "#startup", "#growth"]
+  },
+  {
+    "id": "1628",
+    "author": "Alice Johnson",
+    "author_image": "https://i.ibb.co.com/8L4V2FsY/girl1.jpg",
+    "posted_date": "2024-07-15",
+    "reading_time": "07",
+    "blog_image": "https://i.ibb.co.com/cccwcw6X/3.png",
+    "hashtags": ["#design", "#creativity", "#art"]
+  },
+  {
+    "id": "4759",
+    "author": "Michael Brown",
+    "author_image": "https://i.ibb.co.com/vCrgwn4L/girl2.jpg",
+    "posted_date": "2024-07-18",
+    "reading_time": "04",
+    "blog_image": "https://i.ibb.co.com/93dkyDvq/4.jpg",
+    "hashtags": ["#coding", "#webdevelopment", "#javascript"]
+  }
+]

@@ -12,7 +12,6 @@ export default function Blogs() {
   return (
     <>
       {blogs.map(blog => <Blog blog={blog} key={blog.id}/>)}
-      {blogs.map(blog => console.log(blog))}
     </>
   );
 }

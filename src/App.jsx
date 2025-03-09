@@ -1,6 +1,7 @@
 import Blogs from './components/Blogs/Blogs'
 import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
+import ReadingTime from './components/ReadingTime/ReadingTime'
 
 function App() {
 
@@ -15,8 +16,13 @@ function App() {
           <div className='w-[845px'>
             <Blogs/>
           </div>
-          <div>
-            <Bookmarks />
+          <div className='ml-[24px]'>
+            <div className='mb-[24px]'>
+              <ReadingTime/>
+            </div>
+            <div className='w-[411px] rounded-[8px] pb-[30px]' style={{background: 'rgba(17, 17, 17, 0.05)'}}>
+              <Bookmarks/>
+            </div>
           </div>
         </div>
       </div>

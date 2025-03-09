@@ -1,27 +1,13 @@
-import React from 'react';
+import Bookmark from "../Bookmark/Bookmark";
 
-export default function Bookmarks() {
+export default function Bookmarks({bookmark}) {
   return (
     <>
       <div className='ml-[30px]'>
-        <h1 className='text-[24px] font-bold'>Bookmarked Blogs : 8</h1>
+        <h1 className='text-[24px] font-bold'>Bookmarked Blogs : {bookmark.length < 1 ? 0 : bookmark.length}</h1>
       </div>
 
-      <div className='w-[351px] bg-white rounded-[8px] ml-[30px] mt-[16px]'>
-          <h1 className='text-[18px] font-semibold p-[20px]'>Master Microsoft Power Platform and Become an In-Demand!</h1>
-      </div>
-      <div className='w-[351px] bg-white rounded-[8px] ml-[30px] mt-[16px]'>
-          <h1 className='text-[18px] font-semibold p-[20px]'>Master Microsoft Power Platform and Become an In-Demand!</h1>
-      </div>
-      <div className='w-[351px] bg-white rounded-[8px] ml-[30px] mt-[16px]'>
-          <h1 className='text-[18px] font-semibold p-[20px]'>Master Microsoft Power Platform and Become an In-Demand!</h1>
-      </div>
-      <div className='w-[351px] bg-white rounded-[8px] ml-[30px] mt-[16px]'>
-          <h1 className='text-[18px] font-semibold p-[20px]'>Master Microsoft Power Platform and Become an In-Demand!</h1>
-      </div>
-      <div className='w-[351px] bg-white rounded-[8px] ml-[30px] mt-[16px]'>
-          <h1 className='text-[18px] font-semibold p-[20px]'>Master Microsoft Power Platform and Become an In-Demand!</h1>
-      </div>
+      {bookmark?.map(bookmark => <Bookmark bookmark={bookmark} key={bookmark.id}/>)}
     </>
   );
 }

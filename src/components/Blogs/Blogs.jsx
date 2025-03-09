@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from "../Blog/Blog";
 
-export default function Blogs() {
+export default function Blogs({setReadingTime}) {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(()=>{
@@ -11,7 +11,7 @@ export default function Blogs() {
     },[])
   return (
     <>
-      {blogs.map(blog => <Blog blog={blog} key={blog.id}/>)}
+      {blogs.map(blog => <Blog blog={blog} key={blog.id} setReadingTime={setReadingTime}/>)}
     </>
   );
 }

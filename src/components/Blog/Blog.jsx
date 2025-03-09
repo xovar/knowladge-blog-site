@@ -2,7 +2,7 @@ import React from 'react';
 import img from "../../assets/images/1.jpg";
 import person from "../../assets/images/profile.png";
 
-export default function Blog({blog}) {
+export default function Blog({blog, setReadingTime}) {
   return (
     <>
       <div className='w-[100%] border-b-[1px] mb-[40px]' style={{borderBottom: '2px solid rgba(17, 17, 17, 0.15)'}}>
@@ -30,7 +30,7 @@ export default function Blog({blog}) {
           </div>
         </div>
         <div className='mt-[21px] pb-[38px]'>
-          <p className='text-[#6047EC] text-[20px] font-semibold underline'>Mark as read</p>
+          <p onClick={() => setReadingTime(prevTime => prevTime + parseInt(blog.reading_time))} className='text-[#6047EC] text-[20px] w-[121px] font-semibold underline cursor-pointer'>Mark as read</p>
         </div>
       </div>
     </>
